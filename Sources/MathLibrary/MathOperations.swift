@@ -27,8 +27,7 @@ public struct MathOperations {
     // Bölme işlemi
     public static func divide(_ a: Double, _ b: Double) -> Double? {
         guard b != 0 else {
-            print("Hata: Bölme sıfıra yapılamaz.")
-            return nil
+            fatalError("Bir sayı sıfıra bölünemez!")
         }
         return a / b
     }
